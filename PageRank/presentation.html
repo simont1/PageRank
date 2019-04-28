@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8"/>
+  <title> Google PageRank Algorithm </title>
+  <link rel = "stylesheet" href = "presentation.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+  <div id="header">
+    <h1>Google Page Rank Algorithm</h1>
+  </div>
+  <div id="a_main">
+    <div id="a1">
+      <h2>Introduction and Background</h2>
+      <ul>
+        <li>An algorithm used to determine the importance of a certain website, based off of certain factors. </li>
+        <li>Talked about a lot by Search Engine Optimization experts</li>
+      </ul>
+      <ul>
+        <li>Sergey Brin & Larry Page(1996-1998 @ Stanford University)</li>
+        <li>Rapidly expanding size of the internet and # of queries</li>
+        <li>Not quite an unique idea -> had several predecessors that influenced their work</li>
+      </ul>
+    </div>
+    <div id = "a2">
+      <div class="card">
+        <div class="card-header">
+          Crawling
+        </div>
+        <div class="card-body">
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          Indexing
+        </div>
+        <div class="card-body">
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          Serving
+        </div>
+        <div class="card-body">
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id = "b1">
+    <h2>Calculating PageRank</h2>
+    <img src = "pres1.png" height="20%" width="20%">
+    <p>The PageRank of u, is updated based on the incoming links from other websites.
+      These websites transfer a fraction of their importance.
+      PR(v) is the pagerank of v which is divided by L(v), the number of outgoing links.
+      All pageranks are summed up and the value of the new pagerank of u is calculated.</p>
+    <p>
+      What this equation doesn’t include: damping factor and weighted linkage
+      Damping factor takes into account the user stop browsing.
+      It’s the probability that the user keeps on browsing and clicking links.
+      The damping factor fraction of the website’s pagerank is then distributed in the entire system, because the user can start reusing the internet at any of the websites.
+      Also in our equation, we weigh each link equally.
+    </p>
+    <p>Directional Graph - websites are nodes, links are edges. Calculated using current pagerank values Below is a sample network and calculated pageranks for each website</p>
+    <img src = "pres2.png" height="20%" width="20%">
+    <table>
+      <th>
+        <td>Round 3</td>
+        <td>Round 4</td>
+        <td>Round 5</td>
+        <td>Round 6</td>
+        <td>Round 7</td>
+        <td>Round 8</td>
+      </th>
+      <tr>
+        <td> A </td>
+        <td>0.256</td>
+        <td>0.375</td>
+        <td>0.316</td>
+        <td>0.377</td>
+        <td>0.316</td>
+        <td>0.362</td>
+      </tr>
+      <tr>
+        <td> B </td>
+        <td>0.0625</td>
+        <td>0.0625</td>
+        <td>0.125</td>
+        <td>0.064</td>
+        <td>0.094</td>
+        <td>0.079</td>
+      </tr>
+      <tr>
+        <td> C </td>
+        <td> 0.50 </td>
+        <td> 0.256 </td>
+        <td> 0.375 </td>
+        <td> 0.316 </td>
+        <td> 0.377 </td>
+        <td> 0.316 </td>
+      </tr>
+      <tr>
+        <td> D </td>
+        <td> 0.125 </td>
+        <td> 0.25 </td>
+        <td> 0.128 </td>
+        <td> 0.188 </td>
+        <td> 0.158 </td>
+        <td> 0.189 </td>
+      </tr>
+    </table>
+    </div>
+    <div id="c1">
+      <h2> Useful Resources </h2>
+      <ul>
+        <li>http://www.cs.princeton.edu/~chazelle/courses/BIB/pagerank.htm</li>
+        <li>https://searchenginewatch.com/google-pagerank-algorithm-explained</li>
+        <li>https://en.wikipedia.org/wiki/PageRank#History</li>
+        <li>http://infolab.stanford.edu/~backrub/google.html</li>
+        <li>https://support.google.com/webmasters/answer/70897?hl=en</li>
+        <li>https://blog.majestic.com/company/understanding-googles-algorithm-how-pagerank-works/</li>
+      </il>
+
+    </div>
+    <div id = "footer">
+      Softdev2 pd7 -- Bo Hui Lu and Simon Tsui
+    </div>
+
+  </body>
+  </html>

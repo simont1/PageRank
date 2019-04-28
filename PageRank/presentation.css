@@ -1,0 +1,31 @@
+#header{
+  background-color:#99E1D9;
+  width:100%;
+  padding-bottom:10px;
+}
+#a_main{
+  background-color:#E85F5C;
+  /* height:600px; */
+}
+#a1{
+  display:inline-block;
+}
+#a2{
+  display:inline-block;
+}
+#b1{
+  background-color:#ACF39D;
+}
+#c1{
+  background-color:#EBBAB9;
+}
+table{
+  border-width:2px;
+  border-style:solid;
+}
+td{
+  padding:5px;
+  font-size:18px;
+  border-width:1px;
+  border-style:solid;
+}
