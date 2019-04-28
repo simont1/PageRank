@@ -1,3 +1,3 @@
-#Google PageRank Algorithm
+# Google PageRank Algorithm
 
 ## Bo Hui Lu and Simon Tsui
